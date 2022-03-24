@@ -1,0 +1,20 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  // base
+  --font-family: "Ubuntu", sans-serif;
+  --content-width: 1260px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // colors
+  --light-color: #fff;
+  --color-gray: rgba(66,69,81,1);
+  --color-storm: #787a80;
+  --color-ebony: #1e212c;
+  --color-white: #fff;
+  --color-primary: #ff5a30;
+
+  //grid
+  --grid-gap: 30px;
+}

@@ -1,0 +1,42 @@
+.slider-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 15;
+    &__btn {
+        @include flex-all-center;
+        border-radius: 100%;
+        color: var(--color-gray);
+        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+        padding: 20px;
+        height: 64px;
+        svg {
+            display: block;
+            width: 24px;
+            height: 24px;
+            color: inherit;
+            fill: currentColor;
+            object-fit: cover;
+        }
+        &:hover {
+            color: var(--color-white);
+            background-color: var(--color-primary);
+        }
+    }
+}
+
+.swiper-slide {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+.slider-visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.slider-nav__btn.swiper-button-disabled {
+    opacity: 0.4;
+    pointer-events: none;
+}
