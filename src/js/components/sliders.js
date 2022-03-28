@@ -68,3 +68,14 @@ if (portSlider) {
     nextNextActiveSlide.classList.add('slider-visible');
   });
 }
+
+
+const testimonialsSlider = new Swiper('.testimonials-section__items', {
+  slidesPerView: 1,
+  spaceBetween: gap,
+  loop: true,
+  navigation: {
+    nextEl: '.testimonials__next',
+    prevEl: '.testimonials__prev',
+  },
+});

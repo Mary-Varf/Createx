@@ -4,6 +4,7 @@
     justify-content: flex-end;
     position: relative;
     z-index: 15;
+    user-select: none;
     &__btn {
         @include flex-all-center;
         border-radius: 100%;
