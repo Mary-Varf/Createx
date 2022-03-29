@@ -1,9 +1,11 @@
 .page-hero {
     margin: 0;
     color: var(--color-athens);
+    min-height: 600px;
     padding-top: 153px;
-    padding-bottom: 179px;
+    padding-bottom: 80px;
     background-repeat: no-repeat;
+    background-position: right -8px top;
 
     &__breadcrumbs {
         margin-bottom: 40px;
@@ -31,7 +33,6 @@
 
     &--services {
         background-image: url("../img/hero-services-bg.png");
-        background-position: right -8px top;
     }
 
     &--services-design {

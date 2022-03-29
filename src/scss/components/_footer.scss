@@ -7,10 +7,7 @@
         margin-right: 60px;
     }
     &__container {
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(3, 1fr);
-        gap: var(--grid-gap);
     }
 
     &__left {

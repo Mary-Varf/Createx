@@ -11,6 +11,7 @@
         max-width: 590px;
     }
     &__btns {
+        display: flex;
         .btn {
             &:not(:last-child) {
                 margin-right: 20px;

@@ -6,7 +6,7 @@
     z-index: 15;
     user-select: none;
     &__btn {
-        @include flex-all-center;
+        @include flex-v-center;
         border-radius: 100%;
         color: var(--color-gray);
         transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
@@ -27,6 +27,10 @@
     }
 }
 
+.swiper-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
 .swiper-slide {
     opacity: 0;
     visibility: hidden;
