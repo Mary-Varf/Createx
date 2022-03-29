@@ -1,0 +1,41 @@
+.decisions {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: var(--color-athens);
+
+    &__left {
+        grid-column: 5 span;
+        img {
+            margin-bottom: -142px;
+        }
+    }
+
+    &__right {
+        grid-column: 7 span;
+        padding-left: 104px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 46px;
+        line-height: 130%;
+        color: var(--color-ebony);
+        margin-bottom: 60px;
+    }
+    &__item {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+        color: var(--color-gray);
+        padding-left: 37px;
+
+        background-image: url("../img/checked.svg");
+        background-size: 24px 24px;
+        background-repeat: no-repeat;
+        fill: var(--color-primary);
+
+        &:not(:last-child) {
+            margin-bottom: 40px;
+        }
+    }
+}

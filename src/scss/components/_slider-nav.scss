@@ -25,11 +25,16 @@
             background-color: var(--color-primary);
         }
     }
+
 }
 
 .swiper-wrapper {
     display: flex;
     justify-content: space-between;
+}
+.project-images-nav > .swiper-wrapper {
+    display: flex;
+    justify-content: start;
 }
 .swiper-slide {
     opacity: 0;
@@ -44,4 +49,20 @@
 .slider-nav__btn.swiper-button-disabled {
     opacity: 0.4;
     pointer-events: none;
+}
+
+.project-images {
+    overflow: hidden;
+
+    .swiper-slide img {
+        display: block;
+        border-radius: 4px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    &-slider {
+        margin-bottom: 20px;
+    }
 }

@@ -142,3 +142,33 @@ const testimonialsSlider = new Swiper('.testimonials-section__items', {
     prevEl: '.testimonials__prev',
   },
 });
+
+const workImages = document.querySelector('.project-images-slider');
+
+if (workImages) {
+  const workSlider = new Swiper('.project-images-nav', {
+    spaceBetween: 20,
+    slidesPerView: 3,
+    freeMode: true,
+    watchSlidesProgress: true,
+    breakpoints: {
+      576: {
+        slidesPerView: 6
+      },
+      768: {
+        slidesPerView: 10,
+      }
+    }
+  });
+  const workSlidesNav = new Swiper(workImages, {
+    spaceBetween: 20,
+    slidesPerView: 1,
+    navigation: {
+      nextEl: ".project-images__next",
+      prevEl: ".project-images__prev",
+    },
+    thumbs: {
+      swiper: workSlider,
+    },
+  });
+}

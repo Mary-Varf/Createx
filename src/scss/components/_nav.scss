@@ -13,4 +13,8 @@
             margin-right: 40px;
         }
     }
+
+    &--current {
+        color: var(--color-primary);
+    }
 }

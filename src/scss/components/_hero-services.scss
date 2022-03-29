@@ -4,6 +4,7 @@
     min-height: 600px;
     padding-top: 153px;
     padding-bottom: 80px;
+    background-image: url("../img/design-bg.png");
     background-repeat: no-repeat;
     background-position: right -8px top;
 
@@ -20,6 +21,16 @@
         text-transform: uppercase;
         color: var(--color-ebony);
         max-width: 600px;
+        &--small {
+            font-weight: 700;
+            font-size: 64px;
+            line-height: 120%;
+            color: var(--color-ebony);
+            text-transform: initial;
+        }
+        &--mb {
+            margin-bottom: 30px;
+        }
     }
     
     &__descr {
@@ -37,5 +48,17 @@
 
     &--services-design {
         background-image: url("../img/design-offer.jpg");
+    }
+    &--work {
+        background-image: url("../img/hero-work-bg.png");
+    }
+    &--project {
+        background-position: right -8px top 48px;
+        background-image: url("../img/hero-project-bg.png");
+        background-color: var(--color-white);
+    }
+    &--about {
+        background-color: var(--color-athens);
+        background-image: url("../img/about-bg.png");
     }
 }
